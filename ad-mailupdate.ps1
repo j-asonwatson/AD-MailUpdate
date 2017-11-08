@@ -1,5 +1,6 @@
 # Jason Watson
 # 11/8/2017
+# Added to Github
 
 # 1. Import AD module
 Import-Module ActiveDirectory
