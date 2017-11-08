@@ -13,6 +13,8 @@ try { $importedfile = Import-CSV "C:\import.csv"
 }
 catch {
     Write-Host "File imported failed!" -ForegroundColor Yellow
+    $ErrorMessage = $_.Exception.Message
+    Write-Host $ErrorMessage -BackgroundColor White
 }
 
 
