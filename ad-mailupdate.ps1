@@ -1,6 +1,7 @@
 # Jason Watson
 # 11/8/2017
 # Added to Github
+# Reference: https://stackoverflow.com/questions/28118896/set-aduser-based-on-email-in-csv-file?rq=1
 
 # 1. Import AD module
 Import-Module ActiveDirectory
@@ -36,7 +37,7 @@ ForEach ($line in $importedfile) {
   }
   
   # 3.1 See if the email field is blank!!
-  $blankcheck = Get-ADUser -Filter {name -eq $username} -Properties EmailAddress | select EmailAddress
+  $blankcheck = Get-ADUser -Filter {name -eq $username} -Properties EmailAddress | Select-Object EmailAddress
 
   # 3.1.1 If this if statement is true, proceed and print a success message.
   if($blankcheck) {
