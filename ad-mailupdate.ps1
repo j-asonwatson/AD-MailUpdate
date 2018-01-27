@@ -1,5 +1,6 @@
 # Jason Watson
 # 11/8/2017
+# updated 1/27/18
 # Added to Github
 # Reference: https://stackoverflow.com/questions/28118896/set-aduser-based-on-email-in-csv-file?rq=1
 
