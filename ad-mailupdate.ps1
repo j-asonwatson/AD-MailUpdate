@@ -43,7 +43,7 @@ ForEach ($line in $importedfile) {
   # 3.1.1 If this if statement is true, proceed and print a success message.
   if($blankcheck) {
 
-    Write-Host "User $username with email $email updated." -ForegroundColor Green
+    Write-Host "User $username with email $email updated!" -ForegroundColor Green
   }
   # 3.1.2 If the if statement is false, the Email property is blank. Print an error message.
   else { 
